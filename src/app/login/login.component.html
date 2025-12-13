@@ -1,2 +1,10 @@
 <img src="" alt="">
-<form action=""></form>
+<form (ngSubmit)="onSubmit()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required [(ngModel)]="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="password">
+    <br>
+    <button type="submit">Login</button>
+</form>

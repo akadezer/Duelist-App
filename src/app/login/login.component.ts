@@ -21,11 +21,9 @@ export class LoginComponent {
     };
 
     this.http
-      .post(
-        '/user',
-        { id: 1 },
-        { headers: { 'Content-Type': 'application/json' } },
-      )
+      .post('http://localhost:3000/login', requsestBody, {
+        headers: { 'Content-Type': 'application/json' },
+      })
       .subscribe((res) => {
         console.log(res);
       });

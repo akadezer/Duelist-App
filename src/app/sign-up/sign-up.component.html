@@ -1,6 +1,23 @@
-<form (ngSubmit)= "onSubmit()">
-    <input type="text" name="username" [(ngModel)]="username" placeholder="Username">
-    <input type="password" name="password" [(ngModel)]="password" placeholder="Password">
-    <button type="button" (click)="onCancel()">Cancel</button>
-    <button type="submit">Sign Up</button>
+<form (ngSubmit)="onSubmit()">
+  <input type="email" name="email" [(ngModel)]="email" placeholder="Email" />
+  <input
+    type="text"
+    name="username"
+    [(ngModel)]="username"
+    placeholder="Username"
+  />
+  <input
+    type="password"
+    name="password"
+    [(ngModel)]="password"
+    placeholder="Password"
+  />
+  <input
+    type="password"
+    name="confirmPassword"
+    [(ngModel)]="confirmPassword"
+    placeholder="Confirm Password"
+  />
+  <button type="button" (click)="onCancel()">Cancel</button>
+  <button type="submit">Sign Up</button>
 </form>
